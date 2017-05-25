@@ -77,3 +77,13 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+#----------------
+*.shtml
+*.txt
+query.pack
+SearchingEngine.vcxproj
+SearchingEngine.vcxproj.user
+SearchingEngine.vcxproj.filters
+resOri.data
+resOri.data.bak
