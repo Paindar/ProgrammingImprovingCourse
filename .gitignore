@@ -87,3 +87,10 @@ SearchingEngine.vcxproj.user
 SearchingEngine.vcxproj.filters
 resOri.data
 resOri.data.bak
+.vs/*
+*.log
+Debug/*
+Release/*
+*.vsp
+*.psess
+SearchingEngine.sln
