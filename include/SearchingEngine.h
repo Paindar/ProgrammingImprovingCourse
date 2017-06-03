@@ -10,7 +10,7 @@ class SearchingEngine
     struct Item
     {
         string title;
-        vector<string>* context;
+        vector<string> context;
     };
 public:
 	void evaluation(int optRigNum, int allNum, int rigNum);
@@ -30,12 +30,11 @@ private:
 	float _f;
     const char* invalidChar = "\\/:*\?\"<>|";
     vector<Item> allItem;
-    unordered_map<string, unordered_map<int, int> > invlist;//µ•¥ ->Œƒµµ±‡∫≈->¥ ∆µ
+    unordered_map<string, unordered_map<int, int>> invlist;//unordered_map<string, unordered_map<int, int> > invlist;//µ•¥ ->Œƒµµ±‡∫≈->¥ ∆µ
     unordered_map<int, unordered_map<string, double> > docWordWeight;//Œƒµµ±‡∫≈->µ•¥ ->w÷µ 
-    vector<vector<string>*> allData;
     
     //-------------------------------
-    vector<unordered_map<string, unordered_map<string, double>>*> prob;//Language Model Document
+    vector<unordered_map<string, unordered_map<string, double>>> prob;//Language Model Document
     double lerp(double d1, double d2, double ins);
     void filter(vector<pair<int, double>>&, int mode);
 };
