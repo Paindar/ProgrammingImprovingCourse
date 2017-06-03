@@ -4,7 +4,7 @@
 #include <io.h> 
 #include <Windows.h>
 
-#define SSTREAM 1
+//#define SSTREAM 1
 
 #ifdef SSTREAM
 #include <sstream>
